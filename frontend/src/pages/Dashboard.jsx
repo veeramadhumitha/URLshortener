@@ -283,7 +283,11 @@ const handleUpdate = async () => {
                         </a>
                       </td>
                       <td className="px-3 py-3">
-                        <a href={`http://localhost:5000/${u.shortCode}`} target="_blank" rel="noreferrer"
+                       <a
+  href={`https://urlshortener-6srv.onrender.com/${u.shortCode}`}
+  target="_blank"
+  rel="noreferrer"
+>
                           className="font-mono text-sm font-semibold bg-clip-text text-transparent hover:opacity-80"
                           style={{ backgroundImage: gradPrimary }}>
                           /{u.shortCode}
