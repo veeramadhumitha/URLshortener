@@ -48,7 +48,7 @@ const [editValue, setEditValue] = useState("");
         customAlias,
         expiryDays: expiryDays ? parseInt(expiryDays) : null,
       }, authHeader());
-      const generated = `http://localhost:5000/${res.data.data.shortCode}`;
+     const generated = `https://urlshortener-6srv.onrender.com/${res.data.data.shortCode}`;
       setShortUrl(generated);
       setOriginalUrl(""); setCustomAlias(""); setExpiryDays("");
       fetchUrls();
