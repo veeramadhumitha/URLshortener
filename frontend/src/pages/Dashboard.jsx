@@ -283,16 +283,16 @@ const handleUpdate = async () => {
                         </a>
                       </td>
                       <td className="px-3 py-3">
-                       <a
-  href={`https://urlshortener-6srv.onrender.com/${u.shortCode}`}
-  target="_blank"
-  rel="noreferrer"
->
-                          className="font-mono text-sm font-semibold bg-clip-text text-transparent hover:opacity-80"
-                          style={{ backgroundImage: gradPrimary }}>
-                          /{u.shortCode}
-                        </a>
-                      </td>
+  <a
+    href={`https://urlshortener-6srv.onrender.com/${u.shortCode}`}
+    target="_blank"
+    rel="noreferrer"
+    className="font-mono text-sm font-semibold bg-clip-text text-transparent hover:opacity-80"
+    style={{ backgroundImage: gradPrimary }}
+  >
+    {u.shortCode}
+  </a>
+</td>
                       <td className="px-3 py-3">
                         <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-100 text-indigo-700 dark:bg-indigo-500/20 dark:text-indigo-300">
                           <MousePointerClick className="h-3 w-3" />{u.clicks}
@@ -303,10 +303,10 @@ const handleUpdate = async () => {
                       </td>
                       <td className="px-3 py-3 rounded-r-2xl">
                         <div className="flex items-center justify-end gap-1">
-                          <IconBtn label="Copy" onClick={() => copyToClipboard(`http://localhost:5000/${u.shortCode}`, u._id)}>
+                          <IconBtn label="Copy" onClick={() => copyToClipboard(`https://urlshortener-6srv.onrender.com/${u.shortCode}`, u._id)}>
                             {copiedId === u._id ? <Check className="h-4 w-4 text-emerald-500" /> : <Copy className="h-4 w-4" />}
                           </IconBtn>
-                          <IconBtn label="QR" onClick={() => setSelectedQr(`http://localhost:5000/${u.shortCode}`)}>
+                          <IconBtn label="QR" onClick={() => setSelectedQr(`https://urlshortener-6srv.onrender.com/${u.shortCode}`)}>
                             <QrCode className="h-4 w-4" />
                           </IconBtn>
                           <IconBtn label="Analytics" onClick={() => navigate(`/analytics/${u._id}`)}>
