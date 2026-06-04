@@ -105,7 +105,7 @@ LINKLY/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/linkly.git
+git clone https://github.com/veeramadhumitha/linkly.git
 cd linkly
 ```
 
@@ -116,12 +116,7 @@ cd backend
 npm install
 ```
 
-Create a .env file:
 
-```env
-PORT=5000
-MONGO_URI=YOUR_MONGODB_CONNECTION_STRING
-BASE_URL=http://localhost:5000
 ```
 
 Run Backend:
